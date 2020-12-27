@@ -1,6 +1,8 @@
  
 function App() {
-  return null
+  return (
+    <TodoList />
+  )
 }
 
 export default App;
