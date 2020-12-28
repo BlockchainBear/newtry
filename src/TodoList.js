@@ -1,7 +1,10 @@
-export default function TodoList() {
+import React from "react"
+import Todo from "./Todo"
+export default function TodoList( {todos} ) {
     return (
-        <div>
-            React first try, super excited to create more its broker
-        </div>
+       todos.map(todo => {
+           return <Todo todo={todo} />
+
+       })
     )
 }
